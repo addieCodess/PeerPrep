@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "https://peerprep-1.onrender.com/api";
 
 export const registerUser = (name, email, password) =>
   axios.post(`${BASE_URL}/auth/register`, { name, email, password });
